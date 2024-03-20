@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "ORD Countdown",
+  "name": "Operational Ready Date Countdown",
   "icons": [
     {
       "src": "favicon.ico",
