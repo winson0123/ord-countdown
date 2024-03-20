@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/ord-countdown/static/css/main.914cd7f3.css",
-    "main.js": "/ord-countdown/static/js/main.f3980f5d.js",
+    "main.js": "/ord-countdown/static/js/main.e4dbaaaa.js",
     "index.html": "/ord-countdown/index.html",
     "main.914cd7f3.css.map": "/ord-countdown/static/css/main.914cd7f3.css.map",
-    "main.f3980f5d.js.map": "/ord-countdown/static/js/main.f3980f5d.js.map"
+    "main.e4dbaaaa.js.map": "/ord-countdown/static/js/main.e4dbaaaa.js.map"
   },
   "entrypoints": [
     "static/css/main.914cd7f3.css",
-    "static/js/main.f3980f5d.js"
+    "static/js/main.e4dbaaaa.js"
   ]
 }
