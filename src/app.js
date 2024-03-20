@@ -4,11 +4,12 @@ import YearToggle from "./yeartoggle.js";
 import { Select, MenuItem } from "@mui/material";
 
 const calculateORD = (batch, yearer) => {
-  const baseYear = 2017; // 2018 is first ORD year for CyberNSF
+  const baseYear = 2020; // Enlistment year for B7
+  const batch_increment = Math.floor(batch / 2) + 1 // 2 batches per year
   const yearer_increment = yearer ? 1 : 0; // 3 year, 4 year
   const ord_day = batch % 2 === 0 ? 5 : 31;
   const ord_month = batch % 2 === 0 ? "Apr" : "Jul";
-  const ord_year = baseYear + batch + yearer_increment;
+  const ord_year = baseYear + batch_increment + yearer_increment;
 
   return `${ord_day} ${ord_month} ${ord_year}`;
 };
