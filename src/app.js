@@ -29,31 +29,30 @@ const App = () => {
 
   return (
     <div>
-      <div>
-        <h1>
+      <div className="flex justify-center">
+        <h1 className="text-3xl font-bold uppercase tracking-wide">
           Days till Batch {selectedBatch} ({switchContract ? 4 : 3} yearers) ORD
         </h1>
       </div>
       <Countdown date={ordDate} />
-      <form>
-        <label>
-          Batch:
-          <Select
-            value={selectedBatch}
-            onChange={handleBatchChange}
-            inputProps={{
-              "aria-label": "Without label",
-            }}
-          >
-            {[7, 8, 9, 10].map((batch) => (
-              <MenuItem key={batch} value={batch}>
-                {batch}
-              </MenuItem>
-            ))}
-          </Select>
-        </label>
-        <YearToggle switchContract={switchContract} setContract={setContract} />
-      </form>
+      <div>
+        <form className="my-2 flex items-center justify-center space-x-4">
+          <div className="space-x-2">
+            <label>Batch:</label>
+            <Select value={selectedBatch} onChange={handleBatchChange}>
+              {[7, 8, 9, 10].map((batch) => (
+                <MenuItem key={batch} value={batch}>
+                  {batch}
+                </MenuItem>
+              ))}
+            </Select>
+          </div>
+          <YearToggle
+            switchContract={switchContract}
+            setContract={setContract}
+          />
+        </form>
+      </div>
     </div>
   );
 };
