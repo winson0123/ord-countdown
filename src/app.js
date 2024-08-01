@@ -15,7 +15,7 @@ const calculateORD = (batch, yearer) => {
 };
 
 const App = () => {
-  const [switchContract, setContract] = useState(false);
+  const [switchContract, setContract] = useState(true);
   const [selectedBatch, setSelectedBatch] = useState(7);
   const [ordDate, setOrdDate] = useState("");
 
@@ -41,7 +41,7 @@ const App = () => {
           <div className="space-x-2">
             <label>Batch:</label>
             <Select value={selectedBatch} onChange={handleBatchChange}>
-              {[7, 8, 9, 10].map((batch) => (
+              {[7, 8, 9, 10, 11].map((batch) => (
                 <MenuItem key={batch} value={batch}>
                   {batch}
                 </MenuItem>
